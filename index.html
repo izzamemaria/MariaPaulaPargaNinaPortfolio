@@ -10,44 +10,8 @@
     <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-    /* The Modal (background) */
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 0; /* Sit on top */
-        padding-top: 10px; /* Location of the box */
-        left: 20%;
-        top: 0;
-        width: 80%; /* Full width */
-        height: 99%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-
-    /* Modal Content */
-    .modal-content {
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-    }
-
-    /* The Close Button */
-    .close {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:1;cursor:pointer}
+    .w3-half img:hover{opacity:0.8}
     </style>
   </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
@@ -80,138 +44,87 @@
     <a href="#"><img src="https://i.postimg.cc/kgVzcdQV/roberta-profile-pic.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
-    <h1><b>My Portfolio</b></h1>  
-    <h1 style="color: red;"><b>Under Construction</b></h1>    
-
-    <div class="w3-section w3-bottombar w3-padding-16">
-      <span class="w3-margin-right">Filter:</span> 
-        <div id="myBtnContainer">
-          <button class="w3-button w3-black" onclick="filterSelection('all')">ALL</button>
-          <button class="w3-button w3-white" onclick="filterSelection('watercolor')">Watercolor</button>
-          <button class="w3-button w3-white" onclick="filterSelection('charcoal')">Charcoal and Pastel</button>
-          <button class="w3-button w3-white" onclick="filterSelection('painting')">Acrylic and Oil</button>
-          <button class="w3-button w3-white" onclick="filterSelection('design')">Design</button>
-          <button class="w3-button w3-white" onclick="filterSelection('scrapbook')">Scrapbook</button>
-        </div>
-      </div>
+        <h1><b>My Portfolio</b></h1>  
     </div>
 
     </header>
 
-    <!-- First Photo Grid-->
+    <!-- Photo grid -->
     <div class="w3-row-padding">
+        <div class="w3-half">
+            <a href="watercolor.html">
+                <img src="https://i.postimg.cc/j5vDJ9Fh/Capture.jpg" style="width:100%" onclick="onClick(this)">
+                <h3 class="w3-center">Watercolor</h3>
+            </a>
+            <a href="wet_media.html">
+                <img src="https://i.postimg.cc/d1JzxStp/PXL-20230610-183809760.jpg" style="width:100%" onclick="onClick(this)">
+                <h3 class="w3-center">Other Wet Media</h3>
+            </a>
+            <a href="school.html">
+                <img src="https://i.postimg.cc/HWPHKdDg/PXL-20230610-191259340.jpg" style="width:100%" onclick="onClick(this)">
+                <h3 class="w3-center">School Gallery</h3>
+            </a>
+        </div>
 
-        <div id="myBtn" class="filterDiv watercolor">
-            <div class="w3-third w3-container w3-margin-bottom">
-                <img src="https://i.postimg.cc/TYQCB2j7/Capture6.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-                <div class="w3-container w3-white">
-                <p><b>Watercolor sketch</b></p>
-                </div>
+        <div class="w3-half">
+            <a href="dry_media.html">
+                <img src="https://i.postimg.cc/sxvSKwYR/PXL-20230610-182057629.jpg" style="width:100%" onclick="onClick(this)">
+                <h3 class="w3-center">Dry Media</h3>
+            </a>
+            <a href="graphic_design.html">
+                <img src="https://i.postimg.cc/PJCBQnNz/art6.jpg" style="width:100%" onclick="onClick(this)">
+                <h3 class="w3-center">Graphic Design</h3>
+            </a>
+            <a href="other.html">
+                <img src="https://i.postimg.cc/GpXKxc9B/DSC-0008.jpg" style="width:100%" onclick="onClick(this)">
+                <h3 class="w3-center">Scrapbook and More</h3>
+            </a>
+        </div>
+    </div>
+
+    <!-- Images of Me -->
+    <div class="w3-container w3-padding-32 w3-center" id="about">  
+        <h3>About Me</h3>
+        <h4>Roberta F. Parga Nina</h4>
+
+        <div class="w3-col m6">
+            <img src="https://i.postimg.cc/kgVzcdQV/roberta-profile-pic.jpg" alt="Me" style="width:100%">
+        </div>
+        <div class="w3-col m6">
+            <img src="https://i.postimg.cc/c1fsR274/349135087-1328254868042939-2937317128975163805-n.jpg" alt="Me" style="width:150%">
+        </div> 
+    </div>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+        <a href="https://drive.google.com/file/d/1pNelVHyfpmsjLwr-Ns9b6P6fSc5eyDA4/view?usp=sharing" download>
+            <p>
+                <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                <i class="fa fa-download w3-margin-right"></i>View Resume
+                </button>
+            </p>
+        </a>
+    </div>
+    
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-large w3-grey">
+        <h4 id="contact"><b>Contact Me</b></h4>
+        <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+            <div class="w3-third w3-dark-grey">
+                <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+                <p>rpndesign@hotmail.com</p>
+            </div>
+            <div class="w3-third w3-teal">
+                <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+                <p>Miami, Fl</p>
+            </div>
+            <div class="w3-third w3-dark-grey">
+                <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+                <p>+155 (21) 9854-9804</p>
             </div>
         </div>
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <img src="https://i.postimg.cc/TYQCB2j7/Capture6.jpg" alt="Norway" style="width:100%">
-            </div>
-        </div>
-
-    <div class="filterDiv watercolor">
-      <div class="w3-third w3-container w3-margin-bottom">
-        <img src="https://i.postimg.cc/3Rptqg9m/Capture.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-white">
-          <p><b>Watercolor sketch</b></p>
-        </div>
-      </div>
     </div>
-
-    <div class="filterDiv watercolor">
-      <div class="w3-third w3-container">
-        <img src="https://i.postimg.cc/MZ7sbmn8/Capture2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-white">
-          <p><b>Watercolor sketch</b></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="filterDiv watercolor">
-      <div class="w3-third w3-container w3-margin-bottom">
-        <img src="https://i.postimg.cc/0j0ckPTN/Capture3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-white">
-          <p><b>Watercolor sketch</b></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="filterDiv watercolor">
-      <div class="w3-third w3-container w3-margin-bottom">
-        <img src="https://i.postimg.cc/Xqbs6pDh/Capture4.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-white">
-          <p><b>Watercolor sketch</b></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="filterDiv watercolor">
-      <div class="w3-third w3-container">
-        <img src="https://i.postimg.cc/T34QYk4n/Capture5.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-white">
-          <p><b>Watercolor sketch</b></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- Images of Me -->
-  <div class="w3-row-padding w3-padding-16" id="about">
-    <div class="w3-col m6">
-      <img src="https://i.postimg.cc/kgVzcdQV/roberta-profile-pic.jpg" alt="Me" style="width:100%">
-    </div>
-    <div class="w3-col m6">
-      <img src="https://i.postimg.cc/c1fsR274/349135087-1328254868042939-2937317128975163805-n.jpg" alt="Me" style="width:150%">
-    </div>
-  </div>
-
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <h4><b>About Me</b></h4>
-    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-    <hr>
-
-    <a href="https://drive.google.com/file/d/1pNelVHyfpmsjLwr-Ns9b6P6fSc5eyDA4/view?usp=sharing" download>
-      <p>
-        <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-          <i class="fa fa-download w3-margin-right"></i>View Resume
-        </button>
-      </p>
-    </a>
-    <hr>
-  
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-large w3-grey">
-    <h4 id="contact"><b>Contact Me</b></h4>
-    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
-      <div class="w3-third w3-dark-grey">
-        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-        <p>rpndesign@hotmail.com</p>
-      </div>
-      <div class="w3-third w3-teal">
-        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-        <p>Miami, Fl</p>
-      </div>
-      <div class="w3-third w3-dark-grey">
-        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
-        <p>+155 (21) 9854-9804</p>
-      </div>
-    </div>
-  </div>
 <!-- End page content -->
 </div>
 
@@ -226,64 +139,6 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
 }
-
-// filter portfolio
-filterSelection("all")
-function filterSelection(c) {
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    if (x[i].className.indexOf(c) > -1) {
-      x[i].style.display = 'block';
-    } else {
-      x[i].style.display = 'none';
-    }
-  }  
-}
-
-// highlight chosen filter buttons
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("w3-button w3-white");
-var curr = btnContainer.getElementsByClassName("w3-button w3-black");
-curr[0].addEventListener("click", function(){
-    var current = document.getElementsByClassName("w3-button w3-black");
-    current[0].className = "w3-button w3-white";
-    this.className = "w3-button w3-black";
-  });
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("w3-button w3-black");
-    current[0].className = "w3-button w3-white";
-    this.className = "w3-button w3-black";
-  });
-}
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
 
 </script>
 
