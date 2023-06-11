@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Roberta's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .w3-half img:hover{opacity:1}
+    </style>
+  </head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <img src="https://i.postimg.cc/kgVzcdQV/roberta-profile-pic.jpg" style="width:45%;" class="w3-round"><br><br>
+      <h4><b>PORTFOLIO</b></h4>
+      <p class="w3-text-grey">Roberta F. Parga Nina</p>
+    </div>
+    <div class="w3-bar-block">
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-arrow-circle-left fa-fw w3-margin-right"></i>BACK TO MAIN PAGE</a> 
+  
+      <div><i class="w3-margin-right"></i><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</div>
+      <a href="watercolor.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="w3-margin-right"></i><i class="w3-margin-right"></i><i class="w3-margin-right"></i>WATERCOLOR</a> 
+      <div><i class="w3-margin-right"></i><i class="w3-margin-right"></i><i class="w3-margin-right"></i><i class="w3-margin-right"></i>DRY MEDIA</div>
+      <a href="wet_media.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="w3-margin-right"></i><i class="w3-margin-right"></i><i class="w3-margin-right"></i>OTHER WET MEDIA</a> 
+      <a href="graphic_design.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="w3-margin-right"></i><i class="w3-margin-right"></i><i class="w3-margin-right"></i>GRAPHIC DESIGN</a> 
+      <a href="school.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="w3-margin-right"></i><i class="w3-margin-right"></i><i class="w3-margin-right"></i>SCHOOL GALLERY</a> 
+      <a href="other.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="w3-margin-right"></i><i class="w3-margin-right"></i><i class="w3-margin-right"></i>SCRAPBOOK AND MORE</a> 
+    </div>
+  </nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+        <a href="#"><img src="https://i.postimg.cc/kgVzcdQV/roberta-profile-pic.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container">
+        <h1><b>My Portfolio</b></h1>
+        <h2>Dry Media</h2>
+    </header>
+
+    <!-- Photo grid (modal) -->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="https://i.postimg.cc/sxvSKwYR/PXL-20230610-182057629.jpg" style="width:100%" onclick="onClick(this)" alt="Charcoal sketch 1" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Charcoal sketch 1</b></p>
+            </div>
+            <br>
+
+            <img src="https://i.postimg.cc/fRxdH39k/PXL-20230610-182345873.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 4" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 4</b></p>
+            </div>
+            <br>
+
+            <img src="https://i.postimg.cc/NG5NjwVb/PXL-20230610-183533783.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 4" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 4</b></p>
+            </div>
+            <br>
+
+            <img src="https://i.postimg.cc/yddXrFcs/PXL-20230610-184642539.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 4" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 4</b></p>
+            </div>
+            <br>
+
+            <img src="https://i.postimg.cc/8cMMfwLk/PXL-20230610-183648023.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 1" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 1</b></p>
+            </div>
+            <br>
+
+            <img src="https://i.postimg.cc/NfGjHp6N/PXL-20230610-183735462.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 4" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 4</b></p>
+            </div>
+
+        </div>
+
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="https://i.postimg.cc/sgFS9P1t/PXL-20230610-182034160.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 2" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 2</b></p>
+            </div>
+            <br>
+
+            <img src="https://i.postimg.cc/Fzdd01vr/PXL-20230610-182330152.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 5" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 5</b></p>
+            </div>
+            <br>
+
+            <img src="https://i.postimg.cc/4NpQY41v/PXL-20230610-183539461.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 5" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 5</b></p>
+            </div>
+            <br>
+
+            <img src="https://i.postimg.cc/nzCSQ8d4/PXL-20230610-184639021.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 5" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 5</b></p>
+            </div>
+            <br>
+
+            <img src="https://i.postimg.cc/pTDLDScS/PXL-20230610-183713137.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 2" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 2</b></p>
+            </div>
+            
+        </div>
+
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="https://i.postimg.cc/bJv2N3F2/PXL-20230610-182413828.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 3" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 3</b></p>
+            </div>
+            <br>
+
+            <img src="https://i.postimg.cc/fTdSL355/PXL-20230610-182317383.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 6" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 6</b></p>
+            </div>
+            <br>
+
+            <img src="https://i.postimg.cc/ydJFs7dZ/PXL-20230610-183544069.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 6" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 6</b></p>
+            </div>
+            <br>
+
+            <img src="https://i.postimg.cc/fRC82Wp7/PXL-20230610-184609419.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 6" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 6</b></p>
+            </div>
+            <br>
+
+            <img src="https://i.postimg.cc/gjmk4Kf2/PXL-20230610-183706755.jpg" style="width:100%" onclick="onClick(this)" alt="Watercolor sketch 3" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Watercolor sketch 3</b></p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption"></p>
+        </div>
+    </div>
+  
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-large w3-grey">
+        <h4 id="contact"><b>Contact Me</b></h4>
+        <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+        <div class="w3-third w3-dark-grey">
+            <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+            <p>rpndesign@hotmail.com</p>
+        </div>
+        <div class="w3-third w3-teal">
+            <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+            <p>Miami, Fl</p>
+        </div>
+        <div class="w3-third w3-dark-grey">
+            <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+            <p>+155 (21) 9854-9804</p>
+        </div>
+        </div>
+    </div>
+<!-- End page content -->
+</div>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+    }
+</script>
+
+</body>
+</html>
